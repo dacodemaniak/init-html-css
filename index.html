@@ -24,22 +24,102 @@
                 <abbr title="Hyper Text Markup Language">HTML</abbr>
                 à travers les âges
             </p>
+            
+            <nav><!-- Element qui regroupe des balises de navigation -->
+                <ul><!-- Conteneur de liste-->
+                    <!-- Lien interne vers une section-->
+                    <li>
+                        <a href="#" title="HTML la référence">
+                            En savoir plus...
+                        </a>
+                    </li>
+
+                    <!-- Lien externe vers un autre site -->
+                    <li> Nos réseaux sociaux
+                        <ul>
+                            <li>
+                                <a href="https://facebook.com" target="_new" title="Follow Us">
+                                    Facebook
+                                </a>                                
+                            </li>
+                            <li>
+                                <a href="https://twitter.com" target="_new" title="Follow Us">
+                                    Twitter
+                                </a>                                
+                            </li>
+                            <li>
+                                <a href="https://linked.com" target="_new" title="Follow Us">
+                                    Linkedin
+                                </a>                                
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <!-- Lien de type téléphone /!\ never this way -->
+                    <li>
+                        <a href="tel:0522336699" title="Click to call">
+                            Appelez nous
+                        </a>
+                    </li>
+
+                    <!-- Lien de type mail /!\ never this way -->
+                    <li>
+                        <a 
+                            href="mailto:toto@tartempion.com?subject=Contact us" 
+                            title="Send an email"
+                        >
+                            Mail
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         
-        <section>
-            <header>
-                <h2>Le langage HTML</h2>
-                <p>
-                    Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
-                    <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
-                </p>
-            </header>
+        <main>
+            <section>
+                <header>
+                    <h2>Le langage HTML</h2>
+                    <p>
+                        Le <strong>langage HTML</strong> sert à définir le sens des contenus d'une page.
+                        <em>Il n'est en aucun cas responsable de l'enrichissement</em> de ces contenus.
+                    </p>
+                </header>
 
-        </section>
+                <article>
+                    <header>
+                        <h3>Deux familles de balises HTML</h3>
+                    </header>
+                    <p>
+                        Les balises bloc définissent un rectangle occupant
+                        la totalité de la largeur disponible dans le navigateur.
+                    </p>
+                    <footer>
+                        <cite title="w3c.org">
+                            <a href="https://w3c.org" title="W3C" target="_new">
+                                Bloc tags
+                            </a>
+                        </cite>
+                    </footer>
+                </article>
+            </section>
 
-        <h2>HTML : web sémantique</h2>
+            <section>
+                <header>
+                    <h2>Le langage CSS</h2>
+                    <p>
+                        Le langage CSS est responsable de la forme des contenus.
+                    </p>
+                </header>
+            </section>
+        </main>
 
         <footer>
+            <!-- 
+                Spécification d'une adresse
+                L'utilisation du format vcard est recommandé
+                @see : http://microformats.org/wiki/vcard-fr
+            -->
             <address>
                 
             </address>
