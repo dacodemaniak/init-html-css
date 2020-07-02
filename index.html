@@ -17,32 +17,35 @@
     -->
     <body>
         <header>
+  
             <h1>Découvrir le HTML</h1>
+
             <p>
                 L'histoire du 
                 <!--
                     abbr avec l'attribut title pour donner la signification
                     de l'abbréviation définie (ici HTML <=> Hyper Text Markup Language)
                 -->
-                <abbr title="Hyper Text Markup Language">HTML</abbr>
+                <abbr title="Hyper Text Markup Language" class="dropdown">HTML</abbr>
                 à travers les âges
             </p>
-            
-            <nav><!-- Element qui regroupe des balises de navigation -->
+
+            <nav class="bg-dark"><!-- Element qui regroupe des balises de navigation -->
                 <ul><!-- Conteneur de liste-->
                     <!-- Lien interne vers une section-->
                     <li>
-                        <a href="#" title="HTML la référence">
+                        <a class="btn bg-dark shadowed" href="#" title="HTML la référence">
                             HTML
                         </a>
                     </li>
                     <li>
-                        <a href="#" title="CSS la référence">
+                        <a class="btn bg-dark shadowed" href="#" title="CSS la référence">
                             CSS
                         </a>
                     </li>
                     <!-- Lien externe vers un autre site -->
-                    <li>Nos réseaux sociaux
+                    <li>
+                        Nos réseaux sociaux
                         <ul>
                             <li>
                                 <a href="https://facebook.com" target="_new" title="Follow Us">
@@ -60,7 +63,7 @@
                                 </a>                                
                             </li>
                         </ul>
-                    </li>
+                    </li><!-- Fermer la ligne Nos réseaux sociaux -->
 
                     <!-- Lien de type téléphone /!\ never this way -->
                     <li>
