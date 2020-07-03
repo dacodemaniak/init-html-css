@@ -160,3 +160,23 @@ section#section-css {
 #page-html section#section-html h2 {
     color: var(--info);
 }
+
+/**
+* Specific design for footer that have a bg-dark class
+**/
+footer.bg-dark, footer.bg-light {
+    color: inherit;
+}
+
+footer.bg-dark ul, footer.bg-light ul {
+    margin: 0;
+    padding: 0;
+}
+footer.bg-dark h3, footer.bg-light h3 {
+    color: var(--light);
+}
+
+footer.bg-dark a, footer.bg-light a {
+    color: inherit;
+    text-decoration: none;
+}

@@ -8,6 +8,8 @@
         <title>Découvrir le HTML</title>
 
         <link href="./assets/css/styles.css" rel="stylesheet">
+        <!-- Load icomoon styles -->
+        <link href="./assets/css/style.css" rel="stylesheet">
 
     </head>
 
@@ -35,35 +37,16 @@
                     <!-- Lien interne vers une section-->
                     <li>
                         <a class="btn bg-dark shadowed" href="#" title="HTML la référence">
-                            HTML
+                            <span class="icon-html-five"></span> HTML
                         </a>
                     </li>
                     <li>
                         <a class="btn bg-dark shadowed" href="#" title="CSS la référence">
-                            CSS
+                            <span class="icon-css3"></span> CSS
                         </a>
                     </li>
                     <!-- Lien externe vers un autre site -->
-                    <li>
-                        Nos réseaux sociaux
-                        <ul>
-                            <li>
-                                <a href="https://facebook.com" target="_new" title="Follow Us">
-                                    Facebook
-                                </a>                                
-                            </li>
-                            <li>
-                                <a href="https://twitter.com" target="_new" title="Follow Us">
-                                    Twitter
-                                </a>                                
-                            </li>
-                            <li>
-                                <a href="https://linked.com" target="_new" title="Follow Us">
-                                    Linkedin
-                                </a>                                
-                            </li>
-                        </ul>
-                    </li><!-- Fermer la ligne Nos réseaux sociaux -->
+
 
                     <!-- Lien de type téléphone /!\ never this way -->
                     <li>
@@ -128,15 +111,29 @@
             </section>
         </main>
 
-        <footer>
-            <!-- 
-                Spécification d'une adresse
-                L'utilisation du format vcard est recommandé
-                @see : http://microformats.org/wiki/vcard-fr
-            -->
-            <address>
-                
-            </address>
+        <footer class="bg-light">
+            <nav>
+                <h3>
+                    Nos réseaux sociaux
+                </h3>
+                <ul>
+                    <li>
+                        <a href="https://facebook.com" target="_new" title="Follow Us">
+                            <span class="icon-facebook2"></span> Facebook
+                        </a>                                
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_new" title="Follow Us">
+                            <span class="icon-twitter"></span> Twitter
+                        </a>                                
+                    </li>
+                    <li>
+                        <a href="https://linked.com" target="_new" title="Follow Us">
+                            <span class="icon-linkedin"></span> Linkedin
+                        </a>                                
+                    </li>
+                </ul>
+            </nav>
         </footer>
     </body>
 
