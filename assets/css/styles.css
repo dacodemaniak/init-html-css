@@ -149,3 +149,14 @@ section#section-html {
 section#section-css {
     background-color: var(--warning);
 }
+
+/**
+* Specific design for specific pages
+**/
+#page-html section#section-html {
+    background-color: rgb(255, 255, 255);
+}
+
+#page-html section#section-html h2 {
+    color: var(--info);
+}
