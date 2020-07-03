@@ -32,17 +32,18 @@
                 à travers les âges
             </p>
 
-            <nav class="bg-dark"><!-- Element qui regroupe des balises de navigation -->
-                <ul><!-- Conteneur de liste-->
+            <!-- Element qui regroupe des balises de navigation -->
+            <nav class="bg-dark">
+                <ul class="flex-container"><!-- Conteneur de liste-->
                     <!-- Lien interne vers une section-->
                     <li>
-                        <a class="btn bg-dark shadowed" href="#" title="HTML la référence">
-                            <span class="icon-html-five"></span> HTML
+                        <a class="btn bg-dark" href="#" title="HTML la référence">
+                            <span class="icon-html-five"></span>HTML
                         </a>
                     </li>
                     <li>
-                        <a class="btn bg-dark shadowed" href="#" title="CSS la référence">
-                            <span class="icon-css3"></span> CSS
+                        <a class="btn bg-dark" href="#" title="CSS la référence">
+                            <span class="icon-css3"></span>CSS
                         </a>
                     </li>
                     <!-- Lien externe vers un autre site -->
@@ -50,14 +51,15 @@
 
                     <!-- Lien de type téléphone /!\ never this way -->
                     <li>
-                        <a href="tel:0522336699" title="Click to call">
+                        <a class="btn bg-dark" href="tel:0522336699" title="Click to call">
                             Appelez nous
                         </a>
                     </li>
 
                     <!-- Lien de type mail /!\ never this way -->
                     <li>
-                        <a 
+                        <a
+                            class="btn bg-dark" 
                             href="mailto:toto@tartempion.com?subject=Contact us" 
                             title="Send an email"
                         >
@@ -83,7 +85,7 @@
                         <h3>Deux familles de balises HTML</h3>
                     </header>
                     <p>
-                        Les balises bloc définissent un rectangle occupant
+                        Les <span>balises bloc</span> définissent un rectangle occupant
                         la totalité de la largeur disponible dans le navigateur.
                     </p>
                     
@@ -111,30 +113,32 @@
             </section>
         </main>
 
-        <footer class="bg-light">
-            <nav>
-                <h3>
-                    Nos réseaux sociaux
-                </h3>
-                <ul>
-                    <li>
-                        <a href="https://facebook.com" target="_new" title="Follow Us">
-                            <span class="icon-facebook2"></span> Facebook
-                        </a>                                
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_new" title="Follow Us">
-                            <span class="icon-twitter"></span> Twitter
-                        </a>                                
-                    </li>
-                    <li>
-                        <a href="https://linked.com" target="_new" title="Follow Us">
-                            <span class="icon-linkedin"></span> Linkedin
-                        </a>                                
-                    </li>
-                </ul>
-            </nav>
-        </footer>
+        <div class="bg-dark">
+            <footer>
+                <nav>
+                    <h3>
+                        Nos réseaux sociaux
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="https://facebook.com" target="_new" title="Follow Us">
+                                <span class="icon-facebook2"></span> Facebook
+                            </a>                                
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_new" title="Follow Us">
+                                <span class="icon-twitter"></span> Twitter
+                            </a>                                
+                        </li>
+                        <li>
+                            <a href="https://linked.com" target="_new" title="Follow Us">
+                                <span class="icon-linkedin"></span> Linkedin
+                            </a>                                
+                        </li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
     </body>
 
 </html><!-- Fin du document HTML -->

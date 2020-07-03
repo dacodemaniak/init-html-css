@@ -41,14 +41,16 @@ nav {
     color: var(--light);
 }
 
-nav ul.flex-container {
+.flex-container {
     display: flex;
     flex-direction: row;
 }
 
-nav ul li {
-    
+header nav ul li {
+    width: 10em;
+    margin-right: 0.5em;
 }
+
 /**
 * On veut définir la couleur #000 et enlever le soulignement
 *   sur tous les liens qui sont dans un LI, lui même dans un UL, lui même dans un NAV
@@ -164,19 +166,32 @@ section#section-css {
 /**
 * Specific design for footer that have a bg-dark class
 **/
-footer.bg-dark, footer.bg-light {
+.bg-dark footer, .bg-light footer {
     color: inherit;
+    background-color: inherit;
 }
 
-footer.bg-dark ul, footer.bg-light ul {
+.bg-dark footer ul, .bg-light footer ul {
     margin: 0;
     padding: 0;
 }
-footer.bg-dark h3, footer.bg-light h3 {
-    color: var(--light);
+.bg-dark footer h3, .bg-light footer h3 {
+    color: inherit;
 }
 
-footer.bg-dark a, footer.bg-light a {
+.bg-dark footer a, .bg-light footer a {
     color: inherit;
     text-decoration: none;
+}
+
+/**
+* Let me put some spaces between icons and text
+*   Attribute selector
+**/
+span[class^="icon-"] {
+    margin-right: 0.3em;
+}
+
+main article p span {
+    color: var(--warning);
 }
