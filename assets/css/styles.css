@@ -46,6 +46,16 @@ nav {
     flex-direction: row;
 }
 
+/**
+* Première règle de media
+**/
+@media screen and (max-width: 576px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+
 header nav ul li {
     width: 10em;
     margin-right: 0.5em;
