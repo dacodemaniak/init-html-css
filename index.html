@@ -80,8 +80,9 @@
                     <li>
                         <a
                             class="btn bg-dark" 
-                            href="mailto:toto@tartempion.com?subject=Contact us" 
+                            href="#" 
                             title="Send an email"
+                            onclick="openModal()"
                         >
                             Mail
                         </a>
@@ -161,7 +162,7 @@
         </div>
 
         <!-- Template pour l'affichage du formulaire de contact -->
-        <!-- <template id="form-template"> -->
+        <template id="form-template">
             <!-- form c'est un ensemble de champs (ou contrôles de formulaire) -->
             <div class="outer-modal">
                 <div class="inner-modal">
@@ -181,13 +182,16 @@
                         </div>
 
                         <div>
-                            <button id="send-btn" type="submit">Envoyer</button>
+                            <button id="send-btn" type="submit" onclick="sendAndClose()">Envoyer</button>
+                            <button id="close-btn" type="button" onclick="closeModal()">Annuler</button>
                         </div>
                     </form>
                 </div>
             </div>
-        <!-- </template> -->
+        </template>
         <!-- Fin du template pour l'affichage du formulaire de contact -->
+
+        <script src="./assets/js/modal.js"></script>
     </body>
 
 </html><!-- Fin du document HTML -->
