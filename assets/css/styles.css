@@ -230,3 +230,25 @@ span[class^="icon-"] {
 main article p span {
     color: var(--warning);
 }
+
+/**
+* Modal design
+**/
+.outer-modal {
+    position: fixed; /** C'est moi qui décide de l'endroit où placer l'élément **/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.inner-modal {
+    position: relative;
+    background-color: var(--light);
+    width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
