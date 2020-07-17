@@ -97,23 +97,7 @@ nav ul li a.btn {
     transition: color 0.6s 0s ease-in, transform 0.4s 0.4s linear, background-color 0.8s 0.7s ease-out; /** Définit comment passer à l'état final **/
 }
 
-/**
-    nav {
-        &.bg-dark {
-            background-color: blah blah blah;
-        }
-        ul {
-            list-style-type: none;
-            li {
-                a {
-                    &.btn { // nav ul li a.btn => 
-                        // Properties goes here
-                    }
-                }
-            }
-        }
-    }
-**/
+
 nav ul li a.btn:hover { /** Etat final c'est ici **/
     color: var(--dark);
     background-color: var(--light);
