@@ -1,0 +1,29 @@
+{
+  "name": "init-html",
+  "version": "1.0.0",
+  "description": "Site web de présentation des technologies du web : HTML / CSS / JS",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dacodemaniak/init-html-css.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "site",
+    "web"
+  ],
+  "author": "Jean-Luc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dacodemaniak/init-html-css/issues"
+  },
+  "homepage": "https://github.com/dacodemaniak/init-html-css#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}
