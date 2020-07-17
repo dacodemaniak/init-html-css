@@ -74,7 +74,6 @@ nav {
 
 
 header nav ul li {
-    width: 10em;
     margin-right: 0.5em;
 }
 
@@ -136,8 +135,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .bg-light {
-    background-color: var(--light);
-    color: var(--dark);
+    background-color: var(--secondary)!important; /** Je serai encore plus important que l'autre **/
+    color: var(--light);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--light);
 }
 
 .bg-dark {
