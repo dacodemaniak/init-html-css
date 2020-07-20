@@ -26,16 +26,10 @@ class App {
 }
 
 // App launcher
+let app = null
+
 $(document).ready(
     () => {
-        const app = new App() // Créer une instance de la classe App
-
-        const openModal = () => {
-            app.openModal()
-        }
-
-        const closeModal = () => {
-            app.closeModal()
-        }
+        app = new App() // Créer une instance de la classe App
     }
 )

@@ -1,8 +1,26 @@
+import * as $ from 'jquery'
+
 /**
  * Modal : Gère l'affichage de la boîte modale au clic sur un élément de menu
  */
 export default class Modal {
  
+    constructor() {
+        const openButton = document.querySelector('[openModal]')
+
+        openButton.onclick = () => {
+            this.openModal()
+        }
+
+        $('body').on(
+            'click',
+            '#close-btn',
+            (event) => {
+                this.closeModal()
+            }
+        )
+    }
+
     openModal() {
         console.log('Je dois ouvrir la boîte modale')
 
