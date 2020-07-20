@@ -1,5 +1,9 @@
 import * as $ from 'jquery'
 
+import Modal from './modal';
+
+import './../scss/main.scss'
+
 /**
  * @name App
  * @author Adrar - Juil. 2020
@@ -9,12 +13,29 @@ import * as $ from 'jquery'
 class App {
     constructor() {
         console.log('App is running !')
+        this.modal = new Modal()
+    }
+
+    openModal() {
+        this.modal.openModal()
+    }
+
+    closeModal() {
+        this.modal.closeModal()
     }
 }
 
 // App launcher
 $(document).ready(
     () => {
-        new App() // Créer une instance de la classe App
+        const app = new App() // Créer une instance de la classe App
+
+        const openModal = () => {
+            app.openModal()
+        }
+
+        const closeModal = () => {
+            app.closeModal()
+        }
     }
 )
